@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+/* No body foi configurado a cor da fonte do site. Porém nem todos os elementos herdarão essa cor, como por exemplo os LINKS. Ai devemos configurar diretamente no link.*/
+body {
+    margin: 0px;
+    font-family: arial, sans-serif;
+    color: #141414;
+}
+
+h1, h2, h3, p {
+    margin: 0px;
+}
+
+/* UL TEM POR PADRÃO MARGIN E PADDING - REMOVENDO */
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+/* Com esta configuração, quando adicionarmos a imagem ela não vai crescer infinitamente. */
+img {
+    max-width: 100%;
+    display:block;
+}
+
+/* subtitilo foi configurado no global, pois será reaproveitado */
+.subtitulo {
+    font-size: 8rem;
+    word-break: break-all;
+    line-height: 1;
+    text-transform: uppercase;
+    max-width: 5ch;
+}
+
+
+@media (max-width: 800px) {
+    .subtitulo {
+        font-size: 3rem;
+        text-transform: capitalize;
+        max-width: initial !important;
+    }
+}
+
